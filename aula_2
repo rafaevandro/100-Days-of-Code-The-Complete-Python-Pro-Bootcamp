@@ -1,0 +1,80 @@
+#Data Types
+
+#String
+#Indice []
+
+print("Hello"[4])
+
+#Integer
+
+print(103  + 301)
+
+#Float
+
+3.14159
+
+#Boolean
+
+True or False
+
+#type - Para verificar o tipo de algum dado podemos validar dessa forma
+
+num_char = len(input("What is your name?"))
+print(type(num_char))
+
+#Dessa forma irá informar que se trata de um numero inteiro
+#Para converter para string precisamos criar uma nova variavel e atribuir como string:
+
+new_num_char = str(num_char)
+print("Your name has " + new_num_char + " characters.")
+
+#Exercicios
+
+two_digit_number = input()
+
+first_digit = int(two_digit_number[0])
+second_digit = int(two_digit_number[1])
+
+# Add the two integers together
+two_digit_number = first_digit + second_digit
+
+print(two_digit_number)
+
+#mathematical operations
+
+3 + 5
+7 - 4
+3 * 2
+6 / 3 #float
+2 ** 3 #potencia
+
+# PEMDASLR
+# ()
+# **
+# */
+# +-
+
+#Exercicio calculo de IMC(BMI)
+
+# 1st input: enter height in meters e.g: 1.65
+height = input()
+# 2nd input: enter weight in kilograms e.g: 72
+weight = input()
+
+weight_as_int = int(weight)
+height_as_float = float(height)
+
+bmi = weight_as_int / (height_as_float ** 2)
+
+# round - usado para "arredondar numeros"
+# f-String - usado para converter os dados em string sem precisar formatar
+
+print(f"Your bmi is {bmi}")
+
+# Exercicio life in Weeks
+
+age = input()
+years = 90 - int(age)
+weeks = years * 52
+
+print(f"You have {weeks} weeks left.")
