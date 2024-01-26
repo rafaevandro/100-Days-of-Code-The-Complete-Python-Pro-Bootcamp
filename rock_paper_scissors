@@ -1,0 +1,68 @@
+pedra = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+papel = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+tesoura = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+escolha_jogador = input("O que você vai escolher? Digite 0 para Pedra, 1 para Papel e 2 para Tesoura\n")
+if escolha_jogador == "0":
+  print(f"Você escolheu:\n{pedra}")
+elif escolha_jogador == "1":
+  print(f"Você escolheu:\n{papel}")
+elif escolha_jogador == "2":
+  print(f"Você escolheu:\n{tesoura}")
+else:
+  print("A informação não é valida, digite um valor entre 0,1 e 2 para jogar")
+
+import random
+
+escolha_computador = random.randint(0,2)
+
+if escolha_computador == 0:
+  print(f"O computador escolheu:\n{pedra}")
+elif escolha_computador == 1:
+  print(f"O computador escolheu:\n{papel}")
+elif escolha_computador == 2:
+  print(f"O computador escolheu:\n{tesoura}")
+
+if escolha_jogador == "" and escolha_computador == 0:
+  print("Você empatou")
+elif escolha_jogador == "0" and escolha_computador == 1:
+  print("Você perdeu")
+elif escolha_jogador == "0" and escolha_computador == 2:
+  print("Você ganhou")
+
+if escolha_jogador == "1" and escolha_computador == 1:
+  print("Você empatou")
+elif escolha_jogador == "1" and escolha_computador == 2:
+  print("Você perdeu")
+elif escolha_jogador == "1" and escolha_computador == 0:
+  print("Você ganhou")
+
+if escolha_jogador == "2" and escolha_computador == 2:
+  print("Você empatou")
+elif escolha_jogador == "2" and escolha_computador == 0:
+  print("Você perdeu")
+elif escolha_jogador == "2" and escolha_computador == 1:
+  print("Você ganhou")
