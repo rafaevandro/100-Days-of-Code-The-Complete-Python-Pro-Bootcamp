@@ -1,0 +1,75 @@
+#Loops
+
+"""frutas = ["Maçã","Banana","Pessego"]
+for fruta in frutas:
+  print(fruta)"""
+
+#Exercicio
+
+"""# Input a Python list of student heights
+student_heights = input().split()
+for n in range(0, len(student_heights)):
+  student_heights[n] = int(student_heights[n])
+# 🚨 Don't change the code above 👆
+  
+# Write your code below this row 👇
+soma_alturas = 0
+for alturas in student_heights:
+  soma_alturas += alturas
+print(f"total height = {soma_alturas}")
+
+numero_estudantes = 0
+for estudantes in student_heights:
+  numero_estudantes += 1
+print(f"number of students = {numero_estudantes}")
+
+media = round(soma_alturas / numero_estudantes)
+print(f"average height = {media}")"""
+
+#Exercicio 2
+
+"""# Input a list of student scores
+student_scores = input().split()
+for n in range(0, len(student_scores)):
+  student_scores[n] = int(student_scores[n])
+
+# Write your code below this row 👇
+maior_valor = 0
+for score in student_scores:
+  if maior_valor < score:
+    maior_valor = score
+print(f"The highest score in the class is: {teste}")"""
+
+#Função range()
+"""for number in range(1, 11, 2):
+  print(number)"""
+
+"""total = 0
+for number in range(1, 101):
+  total += number
+print(total)"""
+
+#Exercicio
+
+"""target = int(input()) # Enter a number between 0 and 1000
+# 🚨 Do not change the code above ☝️
+
+# Write your code here 👇
+even_sum = 0
+for number in range(2, target + 1, 2):
+  even_sum += number
+print(even_sum)"""
+
+#Exercicio 2 - FizzBuzz Game
+
+# Write your code here 👇
+target = 100
+for number in range(1, target + 1):
+  if number % 3 == 0 and number % 5 == 0:
+    print("FizzBuzz")
+  elif number % 3 == 0:
+    print("Fizz")
+  elif number % 5 == 0:
+    print("Buzz")
+  else:
+    print(number)
