@@ -11,3 +11,22 @@ def my_function():
 my_function()
 
 #Testando no site Reeborg's world
+
+#while
+numero_de_execuções = 5
+while numero_de_execuções > 0:
+  my_function()
+  numero_de_execuções -= 1
+  print(numero_de_execuções)
+
+#Exercicio Rebborg's World - Maze
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+while not at_goal():
+    if right_is_clear():
+        turn_right()
+        move()
